@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
+:root {
+    --bg-color: #E5E5E5;
+    --primary-color: #F0A83E;
+    --white: #FFFFFF;
+    --black: #222222; 
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+}
+/* Header styles */
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    height: 8vh;
+}
+.color-logo{
+    color: var(--black);
+}
+.title{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+.container-nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 1em;
+    
+}
+.container-nav ul li i{
+    padding-left: 1em ;
+}
+
+
+.fa-bars {
+    display: none;
+ 
+}
+
+
+/* Main styles */
+main{
+    background-color: var(--bg-color);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+.main-title > h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 3em;
+
+}
+.main-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.toy-1, .toy-2, .toy-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   height: 30vh;
+    width: 16%;
+    margin: 3%;
+    padding: 2%;
+}
+.toy-1{
+    background-image: url("../img/churrasquitobg.png");
+    
+}
+.toy-2{
+    background-image: url(../img/comederobg.png);
+    
+}
+.toy-3{
+    background-image: url(../img/comidaPerrobg.png);
+    
+}
+.toy-1 h4{
+    color: #3C2313;
+    
+}
+.toy-2 h4{
+    color: #3C2313;
+}
+.toy-3 h4{
+    color: #3C2313;
+}
+.toy-1 h5{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.toy-2 h5{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.toy-3 h5{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+
+
+/* Footer styles */
+
+.subscription-container{
+    background-color: #F0A83E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.subscription-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.input{
+    width: 40vw;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border-color: initial;
+    border-style: initial;
+    border-image: initial;
+    padding: 5px;
+}
+
+.input:focus-visible{
+    outline: initial;
+}
+
+.button-subscription{
+    width: 70px;
+    height: 40px;
+    background: #3C2313;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    margin: 0 5px;
+    border-color: initial;
+    border-style: initial;
+    border-image: initial;
+}
+
+.derechos-container{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.derechos-title{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width: 480px){
+    .container-nav ul {
+        display: none;
+    }
+    .title{
+        padding: 2em;
+    }
+    .fa-bars {
+        display: block;
+        padding-right: 2em;
+    }
+    .main-products {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .toy-1, .toy-2, .toy-3{
+        height: 30vh;
+    width: 50%;
+    }
+    .subscription-container {
+        height: 20vh;
+        flex-wrap: wrap;
+    }
+
+    .input {
+        width: 60vw;
+    }
+
+    .subscription-title {
+        margin: 5px 5px;
+        font-size: 16px;
+    }
+    main{
+        height: 125vh;
+    }
+}
+
+
+ 
+
+ 
+
